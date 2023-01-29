@@ -1,15 +1,37 @@
 @import "normalize.css";
 @import url("https://use.typekit.net/waz4tsx.css");
 :root {
-  --primary: #fe2c55;
+    --primary: #fe2c55;
+    --dark: #121212;
+    --light: #fff;
+    --text-color: #333;
+    // Default Layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 html {
-  font-size: 62.5%;
-
+    font-size: 62.5%;
 }
 body {
-  font-family: ibm-plex-sans, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5; 
-  text-rendering: optimizeSpeed;
+    font-family: ibm-plex-sans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
 }
